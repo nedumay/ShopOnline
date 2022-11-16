@@ -1,10 +1,10 @@
 package com.example.shoponline.domain
 
 data class BestSeller(
-    val id:Int? = null,
-    val is_favorites:Boolean? = null,
-    val title:String? = null,
-    val price_without_discount:Int? = null,
-    val discount_pric:Int? = null,
-    val picture:String? = null
+    var id:Int? = null,
+    var is_favorites:Boolean? = null,
+    var title:String? = null,
+    var price_without_discount:Int? = null,
+    var discount_pric:Int? = null,
+    var picture:String? = null
 )

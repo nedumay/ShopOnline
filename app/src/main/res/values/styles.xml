@@ -8,4 +8,7 @@
         <item name="android:letterSpacing">-0.01</item>
         <item name="android:textColor">#FFFFFF</item>
     </style>
+
+    <!-- Bottom navigation style -->
+    <style name="bottomNavigationStyle" parent="Widget.MaterialComponents.BottomNavigationView.Colored"></style>
 </resources>

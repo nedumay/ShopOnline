@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">Shop Online</string>
     <string name="ecommerce_c">Ecomerce Concept</string>
+    <string name="explorer">Explorer</string>
+    <string name="shop">Shop</string>
+    <string name="favorite">Favorite</string>
+    <string name="account">Account</string>
+    <string name="select_category">Select Category</string>
+    <string name="view_all">view all</string>
+
+    <string-array name="city">
+        <item>Zihuatanejo, Gro</item>
+        <item>Moscow, Ru</item>
+        <item>Rostov-on-Don, Ru</item>
+    </string-array>
 </resources>
