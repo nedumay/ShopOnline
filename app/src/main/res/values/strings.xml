@@ -7,6 +7,19 @@
     <string name="account">Account</string>
     <string name="select_category">Select Category</string>
     <string name="view_all">view all</string>
+    <string name="phone">Phone</string>
+    <string name="computer">Computer</string>
+    <string name="health">Health</string>
+    <string name="books">Books</string>
+    <string name="other">Other</string>
+    <string name="see_more">see more</string>
+    <string name="hot_sales">Hot sales</string>
+    <string name="best_seller">Best seller</string>
+    <string name="buy_now">Buy now!</string>
+    <string name="shop_item">Shop</string>
+    <string name="details">Details</string>
+    <string name="features">Features</string>
+    <string name="select_color_and_capacity">Select color and capacity</string>
 
     <string-array name="city">
         <item>Zihuatanejo, Gro</item>
