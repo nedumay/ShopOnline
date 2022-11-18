@@ -44,7 +44,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:src="@color/black"/>
+                tools:src="@drawable/phone_img"/>
 
             <TextView
                 android:id="@+id/discount_pric"

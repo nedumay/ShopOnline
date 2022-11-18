@@ -24,6 +24,7 @@
     <string name="my_cart">My Cart</string>
     <string name="checkout">Checkout</string>
     <string name="delivery">Delivery</string>
+    <string name="product_details">Product Details</string>
 
     <string-array name="city">
         <item>Zihuatanejo, Gro</item>
