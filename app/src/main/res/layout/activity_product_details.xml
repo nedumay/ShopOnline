@@ -50,7 +50,8 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/prod_det" />
+        app:layout_constraintTop_toBottomOf="@+id/prod_det"
+        tools:listitem="@layout/prod_det_item"/>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -137,8 +138,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                app:layout_constraintEnd_toEndOf="@+id/tabs_card"
-                app:layout_constraintStart_toStartOf="@+id/tabs_card"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tabs_card">
 
                 <ImageView
@@ -248,14 +249,125 @@
                 android:id="@+id/select_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
                 android:fontFamily="@font/mark_pro_medium"
+                android:text="@string/select_color_and_capacity"
                 android:textColor="@color/dark_blue"
                 android:textSize="16sp"
-                android:text="@string/select_color_and_capacity"
-                android:layout_marginTop="24dp"
-                app:layout_constraintStart_toStartOf="@+id/info_phone"
+                app:layout_constraintStart_toStartOf="@+id/tabs_card"
                 app:layout_constraintTop_toBottomOf="@+id/info_phone" />
 
+            <CheckBox
+                android:id="@+id/check_color_1"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="16dp"
+                android:button="@null"
+                android:ellipsize="end"
+                android:background="@drawable/color_shape"
+                android:elevation="2dp"
+                app:layout_constraintStart_toStartOf="@+id/select_text"
+                app:layout_constraintTop_toBottomOf="@+id/select_text" />
+
+            <CheckBox
+                android:id="@+id/check_color_2"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:button="@null"
+                android:ellipsize="end"
+                android:background="@drawable/color_shape"
+                android:elevation="2dp"
+                app:layout_constraintStart_toEndOf="@+id/check_color_1"
+                app:layout_constraintTop_toBottomOf="@+id/select_text" />
+
+            <CheckBox
+                android:id="@+id/check_ssd_1"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="80dp"
+                android:background="@drawable/select_ssd_btn"
+                android:button="@null"
+                android:elevation="2dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:maxLines="2"
+                android:minLines="2"
+                android:fontFamily="@font/mark_pro_medium"
+                android:textColor="@color/selector_ssd_text"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/check_color_2"
+                app:layout_constraintStart_toEndOf="@+id/check_color_2"
+                app:layout_constraintTop_toTopOf="@+id/check_color_2"
+                tools:text="256 GB"/>
+
+            <CheckBox
+                android:id="@+id/check_ssd_2"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/select_ssd_btn"
+                android:button="@null"
+                android:elevation="2dp"
+                android:fontFamily="@font/mark_pro_medium"
+                android:gravity="center_vertical|center_horizontal"
+                android:maxLines="2"
+                android:minLines="2"
+                android:textColor="@color/selector_ssd_text"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/check_ssd_1"
+                app:layout_constraintStart_toEndOf="@+id/check_ssd_1"
+                app:layout_constraintTop_toTopOf="@+id/check_ssd_1"
+                tools:text="128 GB" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/add_to_cart_btn"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/light_red"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/check_ssd_1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/text_add_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="48dp"
+                        android:fontFamily="@font/mark_pro_medium"
+                        android:text="Add to Card!"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/text_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="48dp"
+                        android:fontFamily="@font/mark_pro_medium"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="$1,500.00" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
